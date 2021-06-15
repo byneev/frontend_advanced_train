@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="index-page">
+    <!-- Header -->
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <nav class="main-header__nav">
+          <figure class="main-header__logo">
+            <a href="index.html">
+              <img src="http://via.placeholder.com/44x44" alt="Cat" />
+              <img src="http://via.placeholder.com/100x20" alt="Catenergy" />
+            </a>
+          </figure>
+          <ul class="main-header__list site-menu">
+            <li class="site-menu__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="site-menu__item"><a href="#">Каталог продукции</a></li>
+            <li class="site-menu__item site-menu__item--active">
+              <a>Подбор программы</a>
+            </li>
+          </ul>
+          <button class="main-header__hamburger" type="button"></button>
+        </nav>
+      </div>
+    </header>
+    <!-- main -->
+    <main class="form-main">
+      <h1 class="form-main__title">Подбор программы</h1>
+      <form action="" class="diet">
+        <h2 class="diet__title">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </h2>
+        <!-- data -->
+        <fieldset class="diet__data-field data-field">
+          <legend class="visually-hidden">Данные кота</legend>
+          <div class="data-field__wrapper">
+            <label for="diet-name" class="data-field__label">ИМЯ:*</label
+            ><input
+              type="text"
+              id="diet-name"
+              name="diet-name"
+              class="data-field__input data-field__input--name"
+              placeholder="Барсик"
+            />
+          </div>
+          <div class="data-field__wrapper">
+            <label for="diet-weight" class="data-field__label"
+              >Вес (кг):* </label
+            ><input
+              type="text"
+              id="diet-weight"
+              name="diet-weight"
+              class="input-field__input input-field__input--weight"
+              placeholder="7"
+            />
+          </div>
+          <div class="data-field__wrapper">
+            <label for="diet-age" class="data-field__label"
+              >Возраст (лет):</label
+            ><input
+              type="text"
+              id="diet-age"
+              name="diet-age"
+              class="data-field__input data-field__input--age"
+              placeholder="7"
+            />
+          </div>
+        </fieldset>
+        <!-- purpose -->
+        <fieldset class="diet__purpose-radio purpose-radio">
+          <legend class="visually-hidden">Цель питания</legend>
+          <div class="purpose-radio__wrapper">
+            <input typradio" name="diet-purpose" id="diet-purpose__slim"
+            class="purpose-radio__input" checked />
+            <label for="diet-purpose__slim" class="purpose-radio__label"
+              >Похудение</label
+            >
+          </div>
+          <div class="purpose-radio__wrapper">
+            <input
+              type="radio"
+              name="diet-purpose"
+              id="die-purpose__weight"
+              class="purpose-radio__input"
+            /><label for="die-purpose__weight" class="purpose-radio__label"
+              >Набор массы</label
+            >
+          </div>
+          <div class="purpose-radio__wrapper">
+            <input
+              type="radio"
+              name="diet-purpose"
+              id="diet-purpose__idk"
+              class="purpose-radio__input"
+            /><label for="diet-purpose__idk" class="purpose-radio__label"
+              >Не знаю (Нужен ваш совет)</label
+            >
+          </div>
+        </fieldset>
+        <fieldset class="diet__contacts-field data-field">
+          <legend class="data-field__title">
+            Контактные данные (владельца кота)
+          </legend>
+          <div class="data-field__wrapper">
+            <label for="diet-email" class="data-field__label">E-mail:*</label
+            ><input
+              type="text"
+              name="diet-email"
+              id="diet-email"
+              class="data-field__input data-field__input--email"
+              placeholder="кuklachev@gmail.com"
+            />
+          </div>
+          <div class="data-field__wrapper">
+            <label for="diet-phone" class="data-field__label">Телефон:*</label
+            ><input
+              type="text"
+              name="diet-phone"
+              id="diet-phone"
+              class="data-field__input data-field__input--phone"
+              placeholder="8 (960) 900-60-90"
+            />
+          </div>
+        </fieldset>
+        <!-- comment -->
+        <fieldset class="diet__comment-area comment-area">
+          <legend class="comment-area__title">Комментарий</legend>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            class="comment-area__field"
+            placeholder="Расскажите обо всех повадках кота"
+          ></textarea>
+        </fieldset>
+        <fieldset class="diet__extra-check extra-check">
+          <legend class="extra-check">Дополнительно</legend>
+          <div class="extra-check__wrapper">
+            <input
+              type="checkbox"
+              name="diet-sweet"
+              id="diet-sweet"
+              class="extra-check__input extra-check__input--sweet"
+              checked
+            /><label for="diet-sweet" class="extra-check__label"
+              >сахарозаменитель</label
+            >
+          </div>
+          <div class="extra-check__wrapper">
+            <input
+              type="checkbox"
+              name="diet-water"
+              id="diet-water"
+              class="extra-check__input extra-check__input--water"
+            /><label for="diet-water" class="extra-check__label"
+              >питьевая вода</label
+            >
+          </div>
+          <div class="extra-check__wrapper">
+            <input
+              type="checkbox"
+              name="diet-milk"
+              id="diet-milk"
+              class="extra-check__input extra-check__input--milk"
+            /><label for="diet-milk" class="extra-check__label">молоко</label>
+          </div>
+          <div class="extra-check__wrapper">
+            <input
+              type="checkbox"
+              name="diet-vitamine"
+              id="diet-vitamine"
+              class="extra-check__input extra-check__input--vitamite"
+            /><label for="diet-vitamine" class="extra-check__label"
+              >витамины</label
+            >
+          </div>
+        </fieldset>
+        <div class="diet__sumbit submit-field">
+          <button class="submit-field__button button">Отправить заявку</button>
+          <p class="submit-field__info">* — Обязательные поля</p>
+        </div>
+      </form>
+    </main>
+    <!-- footer -->
+    <footer class="main-footer">
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8</p>
+        <p class="contacts__adress">Санкт-Петербург</p>
+      </section>
+      <section class="map">
+        <figure class="map__picture">
+          <img src="http://via.placeholder.com/320x362" alt="Map" />
+        </figure>
+        <figure class="map__logo">
+          <img src="http://via.placeholder.com/57x53" alt="Catenergy logo" />
+        </figure>
+      </section>
+      <figure class="main-footer__logo">
+        <a>
+          <img src="http://via.placeholder.com/128x24" alt="Catenergy" />
+          <p class="visually-hidden">Cat Energy logo</p>
+        </a>
+      </figure>
+      <section class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk">Vkontakte</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--inst">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--fb">Facebook</a>
+          </li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <a href="htmlacademy.ru" class="copyright__link">HTML Academy</a>
+      </section>
+    </footer>
+  </body>
+</html>
