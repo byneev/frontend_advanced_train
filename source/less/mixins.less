@@ -1,0 +1,25 @@
+.before(@width: 20px, @height: 20px) {
+  position: relative;
+  &::before {
+    width: @width;
+    height: @height;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #88dd00 url('') no-repeat;
+  }
+}
+
+.after(@width: 20px, @height: 20px) {
+  position: relative;
+  &::after {
+    width: @width;
+    height: @height;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0088dd url('') no-repeat;
+  }
+}
