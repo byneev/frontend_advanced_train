@@ -1,0 +1,59 @@
+.features-item {
+  padding: 21px;
+  background-color: @cBack;
+}
+
+.features-item__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.features-item__decor {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: @cBtn;
+}
+
+.features-item__decor--skinny {
+  .after(36px, 50px);
+  &::after {
+    background-image: url("../img/icon-cat-slim.svg") no-repeat;
+  }
+}
+
+.features-item__decor--strong {
+  .after(67px, 28px);
+  &::after {
+    background-image: url("../img/icon-cat-pro.svg") no-repeat;
+  }
+}
+
+.features-item__title {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.features-item__text {
+  font-family: @fArial;
+  font-size: 14px;
+  line-height: 18px;
+  color: @cText;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.features-item__link {
+  display: inline-block;
+  border: 1px solid green;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  .after(32px, 10px);
+  &::after {
+    background-color: lightcoral;
+    background-image: url("../img/icon-right-arrow-long.svg") no-repeat;
+    right: -47px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

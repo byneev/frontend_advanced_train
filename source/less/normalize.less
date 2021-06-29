@@ -21,6 +21,15 @@ img {
   height: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -32,4 +41,19 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media (min-width: 1440px) {
+    width: 1440px;
+  }
+  @media (min-width: 768px) and (max-width: 1440px) {
+    width: 768px;
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    width: 320px;
+  }
 }

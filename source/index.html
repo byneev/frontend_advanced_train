@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Кэт энерджи</title>
@@ -8,7 +9,7 @@
   <body class="index-page">
     <!-- Header -->
     <header class="main-header">
-      <div class="main-header__wrapper">
+      <div class="container">
         <nav class="main-header__nav">
           <figure class="main-header__logo">
             <a>
@@ -28,38 +29,47 @@
       </div>
     </header>
     <main class="index-main">
-      <h1 class="vissualy-hidden">Функциональное питание для котов</h1>
+      <h1 class="visually-hidden">Функциональное питание для котов</h1>
       <!-- promo -->
       <section class="promo">
-        <h1 class="promo__title">Функциональное питание для котов</h1>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <a href="form.html" class="promo__link button">подобрать программу</a>
+        <div class="promo__wrapper">
+          <h1 class="promo__title">
+            Функциональное<br />
+            питание для котов
+          </h1>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        </div>
+        <div class="btn-wrapper container"><a href="form.html" class="promo__link button">подобрать программу</a></div>
         <figure class="promo__picture">
-          <img src="http://via.placeholder.com/280x270" alt="питание Catenergy Pro Курица" />
+          <img src="img/index-can-mobile@2x.png" alt="питание Catenergy Pro Курица" width="280" height="270" />
         </figure>
       </section>
       <!-- features -->
       <section class="features">
-        <h2 class="vissualy-hidden">Преимущества</h2>
-        <ul class="features__list features-list">
-          <li class="features-list__item features-item">
-            <div class="features-item__decor"></div>
-            <h3 class="features-item__title">Похудение</h3>
-            <p class="features-item__text">
-              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
-              сбросить лишний вес.
-            </p>
-            <a href="#" class="features-item__link">Каталог Slim</a>
-          </li>
-          <li class="features-list__item features-item">
-            <div class="features-item__decor"></div>
-            <h3 class="features-item__title">Набор массы</h3>
-            <p class="features-item__text">
-              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-            </p>
-            <a href="#" class="features-item__link">Каталог Pro</a>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="vissualy-hidden">Преимущества</h2>
+          <ul class="features__list">
+            <li class="features__item features-item">
+              <div class="features-item__wrapper">
+                <div class="features-item__decor features-item__decor--skinny"></div>
+                <h3 class="features-item__title">Похудение</h3>
+              </div>
+              <p class="features-item__text">
+                Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
+                сбросить лишний вес.
+              </p>
+              <a href="#" class="features-item__link">Каталог Slim</a>
+            </li>
+            <li class="features-list__item features-item">
+              <div class="features-item__decor features-item__decor--strong"></div>
+              <h3 class="features-item__title">Набор массы</h3>
+              <p class="features-item__text">
+                Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+              </p>
+              <a href="#" class="features-item__link">Каталог Pro</a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- product-review -->
       <section class="product-review">
